@@ -44,10 +44,6 @@ li {
   display: block;
 }
 
-.sp-only {
-  display: none;
-}
-
 /*--------------------------------
  文字
 ---------------------------------*/
@@ -309,107 +305,84 @@ li {
   flex: 0 0 46%;
   flex-wrap: wrap;
   justify-content: space-between;
+  border: solid 1px #333;
+  border-radius: 30px;
+  padding: 20px 30px;
   margin-bottom: 50px;
-}
-
-.skill-image-wrapper {
-  flex: 0 0 60px;
-  margin-right: 20px;
-}
-
-.skill-body {
-  flex: 1;
 }
 
 .skill-body p:not(:last-child) {
   margin-bottom: 20px;
 }
 
-.skill-title {
+.skill-item .skill-title {
+  font-size: 26px;
   margin-bottom: 3px;
 }
 
-.rate {
-  position: relative;
-  font-size: 16px;
-  display: inline-block;
-  width: 100%;
-  height: 20px;
-  letter-spacing: .3em;
+.icon-desktop:before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f108";
+  font-weight: 900;
+  padding-right : 10px;
+  color: #555;
 }
 
-.rate:before,
-.rate:after {
-  position: absolute;
-  top: 0;
-  left: 0;
-  line-height: 20px;
-  display: inline-block;
-  height: 20px;
-  content: "★★★★★";
+.icon-database:before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f1c0";
+  font-weight: 900;
+  padding-right : 10px;
+  color: #555;
 }
 
-.rate:before {
-  color: #ddd;
+.icon-server:before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f233";
+  font-weight: 900;
+  padding-right : 10px;
+  color: #555;
 }
 
-.rate:after {
-  overflow: hidden;
-  white-space: nowrap;
-  color: #f181b4;
+.icon-toolbox:before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f552";
+  font-weight: 900;
+  padding-right : 10px;
+  color: #555;
 }
 
-.rate1:after {
-  width: 20px;
+.icon-list:before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f022";
+  font-weight: 900;
+  padding-right : 10px;
+  color: #555;
 }
 
-.rate2:after {
-  width: 40px;
+.skill-item .skill-table {
+  margin-top: 20px;
+  width: 350px;
+  text-align: center;
 }
 
-.rate3:after {
-  width: 60px;
+.skill-item .skill-table th {
+  padding: 10px 15px;
 }
 
-.rate4:after {
-  width: 80px;
+
+.skill-item .skill-table thead th {
+  border-bottom: solid 1px #333;
 }
 
-.rate5:after {
-  width: 100px;
+.skill-item .skill-table td {
+  padding: 10px 15px;
 }
 
 /*--------------------------------
  Contact
 ---------------------------------*/
-.contact-list {
-  display: flex;
-  align-items: flex-end;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin: 0 auto;
-}
-
-.contact-item {
-  width: 100px;
-  margin: 0 20px;
-  text-align: center;
-}
-
-.contact-name {
-  font-size: 12px;
-  display: block;
-  margin-top: 5px;
-  color: #333;
-}
-
-.contact-image {
-  width: 50px;
-}
-
-.contact-text {
-  font-size: 14px;
-  margin-top: 10px;
+.contact-section .contact {
   text-align: center;
 }
 
@@ -417,6 +390,7 @@ li {
  Footer
 ---------------------------------*/
 .footer {
+  margin-top: 30px;
   background-color: #333;
 }
 
@@ -437,7 +411,7 @@ li {
   padding: 10px;
   cursor: pointer;
   text-align: center;
-  background-color: #ffe8f4;
+  background-color: #54dbc2;
 }
 
 /*media Queries 767
@@ -450,10 +424,6 @@ li {
 
   .pc-only {
     display: none;
-  }
-
-  .sp-only {
-    display: block;
   }
 
   /* 文字 */
@@ -564,42 +534,6 @@ li {
   .skill-image-wrapper {
     flex: 0 0 75px;
     margin-right: 15px;
-  }
-
-  .rate {
-    font-size: 15px;
-    height: 15px;
-  }
-
-  .rate:before,
-  .rate:after {
-    line-height: 15px;
-    height: 15px;
-  }
-
-  .rate1:after {
-    width: 15px;
-  }
-
-  .rate2:after {
-    width: 35px;
-  }
-
-  .rate3:after {
-    width: 55px;
-  }
-
-  .rate4:after {
-    width: 75px;
-  }
-
-  .rate5:after {
-    width: 95px;
-  }
-
-  /* Contact */
-  .contact-item {
-    width: 70px;
   }
 
   /* フッター */
